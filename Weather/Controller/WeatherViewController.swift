@@ -14,7 +14,6 @@ class WeatherViewController: UIViewController {
     var weatherManager = WeatherManager()
     let locationManager = CLLocationManager()
     
-
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -35,9 +34,8 @@ class WeatherViewController: UIViewController {
     @IBAction func locationPressed(_ sender: UIButton) {
         locationManager.requestLocation()
     }
-  
-    
 }
+
 extension WeatherViewController: UITextFieldDelegate {
     
     @IBAction func searchPressed(_ sender: UIButton) {
